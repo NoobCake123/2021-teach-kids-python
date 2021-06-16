@@ -6,3 +6,4 @@ b = input("amount of sides")
 for x in range(b):
     t.forward(a)
     t.left((b * 180 - 360.0)/b)
+#i hope this works
