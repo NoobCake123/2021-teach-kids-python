@@ -2,6 +2,8 @@ import turtle
 
 t = turtle.Pen()
 t.speed(0)
+t.setx(0)
+t.sety(-200)
 turtle.bgcolor("black")
 sides = int(turtle.textinput("Enter your name", "how many sides?"))
 your_name = turtle.textinput("Enter you name", "what is your name")
