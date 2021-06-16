@@ -1,7 +1,7 @@
 import turtle
 
 t = turtle.Pen()
-t.speed(0)
+t.speed(1)
 t.setx(0)
 t.sety(-200)
 turtle.bgcolor("black")
