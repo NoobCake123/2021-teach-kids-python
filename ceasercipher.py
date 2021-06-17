@@ -18,10 +18,13 @@ if (code == ("d")):
    for letter in message:
        if letter.isupper:
            if ord(letter) < 65+cipher:
-               value = 90 - (ord(letter)-65)
+               value = 91 - cipher + (ord(letter)-65)
+               letter = chr(value)
            else:
-               value = (ord(letter)-cipher)
-        letter = chr(value)
+               value = ord(letter)-cipher
+               letter = chr(value)
+       output += letter
+   print("your message is", output)
 
 
 
