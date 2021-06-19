@@ -44,7 +44,7 @@ else:
         b = random.choice(colors)
         t.color(b)
         t.pendown()
-        t.write(a, "sucks")
+        t.write(e, "sucks")
     time.sleep(120)
 
 
