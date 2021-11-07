@@ -1,11 +1,20 @@
+def converter(line1):
+    n = line1[0]
+    p = int(line1[1])
+    d = int(line1[2])
+    if p > 1:
+        n = n[:-p + 1]
+    pthdigit = n[len(n) - 1]
+    n = n[:-1]
+    if int(pthdigit) <= 4:
+        n = n + str((int(pthdigit) + d) % 10)
+    elif int(pthdigit) >= 5:
+        n = n + str((abs(int(pthdigit) - d)) % 10)
+    for i in range(p - 1):
+        n = n + '0'
+    return n
+
 
 if __name__ == '__main__':
-    n = '139857135'
-    p = 3
-    d = '7'
-    n = n[:-p+1]
-    if n[len(n)-1] <= 4:
-        n[len(n)-1] = str((int(n[len(n)-1])+d)%10)
-    for i in range(p-1):
-        n = n+'0'
-    print(n)
+    for i in range(5):
+        print(f'{i+1}.{converter(input(f"{i+1}.").split(" "))}',end = '''''')

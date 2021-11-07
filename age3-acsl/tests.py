@@ -1,4 +1,5 @@
-n = 'hi'
-print(n[len(n)-1])
+n = '12345678'
+
+print(n)
 
 
