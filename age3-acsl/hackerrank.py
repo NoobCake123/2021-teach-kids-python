@@ -1,2 +1,3 @@
-lis = list('1350981')
-print(set(lis))
+while 1<2:
+    print('Hello!',end = 'Hello!')
+exit(-1)
