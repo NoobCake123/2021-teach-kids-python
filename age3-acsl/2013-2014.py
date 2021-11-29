@@ -3,19 +3,20 @@ def parsedata(word,place):
     #i need the letters, n their placements?
     letterscores = []
     places = []
-    for i in range(len(word)):
-        places.append(place+i)
-    for i in word:
-        if i in ['A','E']:
+    for spot in range(len(word)):
+        places.append(place+spot)
+    for letter in word:
+        if letter in ['A','E']:
             letterscores.append(1)
-        elif i in ['D','R']:
+        elif letter in ['D','R']:
             letterscores.append(2)
-        elif i in ['B','M']:
+        elif letter in ['B','M']:
             letterscores.append(3)
-        elif i in ['V','Y']:
+        elif letter in ['V','Y']:
             letterscores.append(4)
-        elif i in ['J','X']:
+        elif letter in ['J','X']:
             letterscores.append(8)
+    #places = [1,2,3,4] letterscores = [8,1,4,1]
     return [letterscores,places]
 def mults(letterscoresnplaces):
     letterscores = letterscoresnplaces[0]
@@ -46,7 +47,7 @@ def finalscore(boolnscores):
     return grosstotal
 if __name__ == '__main__':
     listofinputs = []
-    line1 = input('1.').split(', ')
+    line1 = input('1. ').split(', ')
     for i in range(5):
         listofinputs.append(int(input(f'{i+2}.')))
     for i in range(5):

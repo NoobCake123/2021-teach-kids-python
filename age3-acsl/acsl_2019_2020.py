@@ -1,9 +1,4 @@
 def converter(line1):
-    """
-    wow! i made my orwn function AND it has a docstring!!!!!!!!
-    :param line1:
-    :return:
-    """
     n = line1[0]
     p = int(line1[1])
     d = int(line1[2])
